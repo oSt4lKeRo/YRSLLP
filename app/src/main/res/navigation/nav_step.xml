@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_step"
+    app:startDestination="@id/stepListFragment">
+
+    <fragment
+        android:id="@+id/stepListFragment"
+        android:name="com.example.yrsllp.StepListFragment"
+        tools:layout="@layout/object_list">
+        <action
+            android:id="@+id/action_stepListFragment_to_stepContentFragment"
+            app:destination="@id/stepContentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepContentFragment"
+        android:name="com.example.yrsllp.StepContentFragment"
+        tools:layout="@layout/step_content_fragment" />
+</navigation>

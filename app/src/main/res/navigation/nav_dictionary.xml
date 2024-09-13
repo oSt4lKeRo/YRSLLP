@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dictionary"
+    app:startDestination="@id/dictionaryFragmentCategory">
+
+    <fragment
+        android:id="@+id/dictionaryFragmentCategory"
+        android:name="com.example.yrsllp.DictionaryFragmentCategory"
+        android:label="DictionaryFragmentCategory"
+        tools:layout="@layout/dictionary_fragment_category"
+        >
+        <action
+            android:id="@+id/action_dictionaryFragmentCategory_to_dictionaryFragmentWord"
+            app:destination="@id/dictionaryFragmentWord" />
+        <action
+            android:id="@+id/action_dictionaryFragmentCategory_to_wordDetailFragment"
+            app:destination="@id/wordDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordDetailFragment"
+        android:name="com.example.yrsllp.DictionarySearchFragment"
+        tools:layout="@layout/dictionary_fragment_search">
+        <argument
+            android:name="word"
+            app:argType="string" />
+        <argument
+            android:name="video_url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/dictionaryFragmentWord"
+        android:name="com.example.yrsllp.DictionaryFragmentWord"
+        android:label="DictionaryFragmentWord"
+        tools:layout="@layout/dictionary_fragment_word"
+        />
+</navigation>

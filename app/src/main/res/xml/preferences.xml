@@ -1,0 +1,50 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory
+        android:key="setting_module_category"
+        android:title="Настройка данных модулей">
+
+<!--        <ListPreference-->
+<!--            android:key="font_size"-->
+<!--            android:title="Font Size"-->
+<!--            android:defaultValue="medium"-->
+<!--            android:entries="@array/font_size_entries"-->
+<!--            android:entryValues="@array/font_size_values" />-->
+
+        <SwitchPreferenceCompat
+            android:key="save_module_info"
+            android:title="Сохранение модулей"
+            android:summary="Включите или выключите для сохранения информации о модулях"
+            android:defaultValue="true" />
+
+<!--        <Preference-->
+<!--            android:key="clear_database"-->
+<!--            android:title="Clear Database"-->
+<!--            android:summary="Delete all data from the database" />-->
+
+        <Preference
+            android:key="clear_module_info"
+            android:title="Удалить сохраненые данных"
+            android:summary="Удалить информацию о всех модулях" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="setting_photo_category"
+        android:title="Настройка данных фото">
+
+<!--        <SwitchPreferenceCompat-->
+<!--            android:key="save_photo"-->
+<!--            android:title="Сохранение фото"-->
+<!--            android:summary="Включите или выключите для сохранения сделанных фотографий"-->
+<!--            android:defaultValue="true" />-->
+
+        <Preference
+            android:key="clear_photo"
+            android:title="Удалить сохраненые данных"
+            android:summary="Удалить информацию о всех фотографиях" />
+
+    </PreferenceCategory>
+
+
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appStyle">#fffaec</color>
+    <color name="ligthGreen">#00FF00</color>
+<!--    <color name="transparent">#80000000</color>-->
+    <color name="moduleBlock">#fffaec</color>
+    <color name="backModulePage">#E0E0E0</color>
+
+    <color name="category_text_first">#4738ba</color>
+    <color name="blue_text_dictionary">#0055ad</color>
+    <color name="backGround_dictionary_category_list">#eff7ff</color>
+
+    <color name="category_first">#27a8d2</color>
+    <color name="category_second">#d9d7dd</color>
+    <color name="category_third">#dbcdfe</color>
+    <color name="category_fourth">#ffc73c</color>
+    <color name="category_fifth">#8071f2</color>
+
+</resources>

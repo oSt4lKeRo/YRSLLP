@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/photoMakeFragment">
+
+    <fragment
+        android:id="@+id/photoMakeFragment"
+        android:name="com.example.yrsllp.PhotoMakeFragment"
+        android:label="PhotoMakeFragment"
+        tools:layout="@layout/photo_make_fragment">
+        <action
+            android:id="@+id/action_photoMakeFragment_to_photoHistoryFragment"
+            app:destination="@id/photoHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoHistoryFragment"
+        android:name="com.example.yrsllp.PhotoHistoryFragment"
+        android:label="PhotoHistoryFragment"
+        tools:layout="@layout/photo_history_fragment" />
+</navigation>
